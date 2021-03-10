@@ -1,8 +1,20 @@
 /* Media Queries */
-/* Table */
+/* Mobile */
 @media (max-width: 739px) {
-    #nav li {
+    #nav {
         display: block;
+        
+    }
+
+    #nav>li {
+        display: block;
+    }
+    #nav>li:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    #nav>li:first-child {
+        display: inline-block;
     }
     #header .search-btn {
         display: none;
@@ -12,9 +24,13 @@
         float: right;
         padding: 14px 23px;
         display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
     }
     #header .menu-btn:hover {
         background-color: #ccc;
         color: #000;
     }
+    
 }
