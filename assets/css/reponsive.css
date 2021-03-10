@@ -42,9 +42,15 @@
     #nav>li:first-child {
         display: inline-block;
     }
+    #content .section-heading {
+        margin-bottom: 30px;
+    }
     .about .member-item {
         width: 100%;
         margin-bottom: 30px;
+    }
+    .member-team .name {
+        margin-top: 10px;
     }
     .member-item .img-avatar img {
         width: 60%;
@@ -52,7 +58,14 @@
     .tour {
         margin-top: 63px;
     }
+    #contact .s-col-full,
     #tour .s-col-full {
         width: 100%;
+    }
+    .col .s-mt-16 {
+        margin-top: 16px;
+    }
+    .col .s-mt-8 {
+        margin-top: 8px;
     }
 }
