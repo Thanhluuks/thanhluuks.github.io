@@ -1,0 +1,389 @@
+/*Set css */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Commom */
+
+.text-white {
+    color: #fff !important;
+}
+.pull-right {
+    float: right !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left:8px;
+    padding-right:8px;
+
+}
+.col-half {
+    width: 50%
+}
+.col-third {
+    width: 33.3333%;
+}
+.col-full {
+    width: 100%
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.mt-8{
+    margin-top: 8px;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+.btn {
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+}
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+
+/* Commom */
+
+
+/*
+1. Position
+2. Size
+3. Color
+4. Other (font style, shape....)
+*/
+body {
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+html {
+    scroll-behavior: smooth;
+
+}
+#header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 46px;
+    background-color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    overflow: hidden;
+}
+#nav {
+    display: inline-block;
+}
+
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a {
+    color:#fff;
+    text-transform: uppercase;
+    line-height: 46px;
+    text-decoration: none;
+    padding:  0px 24px;
+    display: block; 
+}    
+
+
+#nav li:hover>a,
+.subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+
+}
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    color: #000;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav li {
+   list-style-type: none;
+   display: block;
+}    
+
+.subnav li a {
+   color: #000;
+   padding: 8px 16px;
+   text-decoration: none;
+   display: block; 
+ } 
+
+#nav li:hover .subnav {
+    display: block;
+    
+}
+#header .search-btn {
+    /* display: inline-block; */
+    color: #fff;
+    float: right;
+    padding: 14px 23px;
+}
+#header .menu-btn {
+    display: none;
+}
+.search-btn:hover {
+    background-color: #f44336;
+}
+#slider {
+    margin-top:46px ;
+    color: #fff;
+
+}
+#slider .slide {
+    position: relative;
+}
+#slider .slide img {
+    width: 100%;
+    
+}
+
+/* .slide-discription{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    text-align: center;
+    background-color: red;
+    
+} */
+
+.slide h2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 60px 0px;
+    font-weight: 500;
+}
+.slide h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 25px 0px;
+    font-weight: 300;
+
+}
+
+#content .section-heading {
+    width: 768px;
+    max-width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.section-heading .heading {
+    padding-top: 74px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    font-size: 30px;
+
+}
+.section-heading .sub-heading {
+    margin-bottom: 15px;
+    opacity: 0.6;
+    font-size: 15px;
+    font-style: italic;
+
+}
+
+.section-heading .content {
+    text-align: justify;
+    line-height: 1.4;
+    font-size: 15px;
+
+}
+.about .team {
+    overflow: hidden;
+    text-align: center;
+    width: 768px;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+.about .member-team {
+    width: 33.3333%;
+    float: left;
+    margin-bottom: 113px;
+}
+.member-team .name {
+    margin-bottom: 15px;
+    margin-top: 62px;
+    font-size: 15px;
+
+}
+.member-team .img-avatar img {
+    width: 154px;
+    
+}
+
+.tour  {
+    padding-top: 74px ;
+    background-color: #000;
+    
+
+}
+.tour .heading {
+    background-color: #000;
+    margin-top: 0px;
+}
+.sell-ticket {
+    list-style: none;
+    text-align: left;
+    color: black;
+    background-color: white;
+    margin-top: 32px;
+}
+li .month {
+    opacity: 0.8;
+}
+.sell-ticket li {
+    border-bottom: 1px solid #ddd;
+    line-height: 2.5;
+    font-size: 15px;
+   
+    padding-left: 20px;
+}
+.sell-ticket .sold {
+    background-color:#f44336;
+    color: #fff;
+    padding: 4px;
+    margin-left: 20px;
+}
+.sell-ticket .num {
+    background-color: #000;
+    color: #fff;
+    /* padding: 4px; */
+    border-radius: 50%;
+    float: right;
+    width: 30px;
+    height: 30px;
+    margin-right: 30px;
+    text-align: center;
+    margin-top: 4px;
+    line-height: 30px;
+    
+}
+.tour .place-list {
+    overflow: hidden;
+    margin-top: 32px;
+    display: inline-block;
+    margin-left: -8px;
+    margin-right: -8px;
+    padding-bottom: 120px;
+
+}
+.place-list .place {
+    float:left;
+    width: 33.33333%;
+    padding: 0 8px;
+    
+   
+}
+.tour img {
+    width: 100%;
+    display: block;
+   
+}
+.tour img:hover {
+    opacity: 0.6;
+}
+.place .place-content {
+    padding-left: 15px;
+    font-size: 15px;
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    padding-bottom: 30px;
+}
+.place-content .place-heading {
+    padding: 15px 0;
+    font-weight: 550;
+}
+.place-content .place-time {
+    padding: 15px 0;
+    color: #757575;
+}
+.place-content .place-discrip {
+    padding: 15px 0;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+
+/* Contact */
+.section-heading .contact-content {
+    margin-top: 48px;
+}
+ .row .contact-infor  {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.row .contact-form {
+    text-align: left;
+    font-size: 15px;
+
+}
+.contact-infor .content {
+    width: 30px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    
+}
+.map-section img {
+    width: 100%;
+    margin-top: 112px;
+}
+#footer {
+    padding: 64px 16px 80px;
+    text-align: center;
+}
+#footer .social-list  {
+    font-size: 24px;
+}
+
+.social-list a {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.6;
+}
+.comppyright a:hover,
+.social-list a:hover{
+    opacity: 0.4;
+}
+
+.comppyright {
+    margin-top: 25px;
+    opacity: 0.6;
+    font-size: 15px;
+}
