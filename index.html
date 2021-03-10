@@ -57,19 +57,19 @@
           </div>
           
           <div class="team">
-            <div class="member-team">
+            <div class="member-item member-team">
                 <p class="name">Name</p>
                 <div class="img-avatar">
                     <img src="./assets/img/team-er.jpg" alt="Name">
                 </div>
             </div>  
-            <div class="member-team">
+            <div class="member-item member-team">
                 <p class="name">Name</p>
                     <div class="img-avatar">
                     <img src="./assets/img/team-er.jpg" alt="Name">
                     </div>
                 </div>
-                <div class="member-team">
+                <div class="member-item member-team">
                 <p class="name">Name</p>
                     <div class="img-avatar">
                     <img src="./assets/img/team-er.jpg" alt="Name">
@@ -87,7 +87,7 @@
                     <li class="month">November <span class="num">3</span></li>
                 </ul>
                 <div class="place-list">
-                    <div class="place">
+                    <div class="place s-col-full mt-16">
                         <img src="./assets/img/place1.jpg" alt="New York" class="place-img">
                         <div class="place-content">
                             <h3 class="place-heading">New York</h3>
@@ -96,7 +96,7 @@
                             <a href="#" class="btn">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="place">
+                    <div class="place s-col-full mt-16">
                         <img src="./assets/img/place2.jpg" alt="New York" class="place-img">
                         <div class="place-content">
                             <h3 class="place-heading">Paris</h3>
@@ -105,7 +105,7 @@
                             <a href="#" class="btn">Buy Tickets</a>
                         </div>
                     </div>
-                    <div class="place">
+                    <div class="place s-col-full mt-16">
                         <img src="./assets/img/place3.jpg" alt="New York" class="place-img">
                         <div class="place-content">
                             <h3 class="place-heading">San Francisco</h3>
@@ -186,8 +186,14 @@
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for (var i=0; i<menuItems.length;i++) {
             var menuItem = menuItems[i];
-            menuItem.onclick = function () {
-                header.style.height = null;
+            
+            menuItem.onclick = function (event) {
+                var isParentSub = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (!isParentSub) {
+                    header.style.height = null;
+                } else {
+                    event.preventDefault();
+                }
 
             }
         }

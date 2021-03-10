@@ -1,20 +1,8 @@
 /* Media Queries */
 /* Mobile */
 @media (max-width: 739px) {
-    #nav {
-        display: block;
-        
-    }
-
-    #nav>li {
-        display: block;
-    }
-    #nav>li:hover {
-        background-color: #ccc;
-        cursor: pointer;
-    }
-    #nav>li:first-child {
-        display: inline-block;
+    #header {
+        overflow: hidden;
     }
     #header .search-btn {
         display: none;
@@ -32,5 +20,39 @@
         background-color: #ccc;
         color: #000;
     }
-    
+    #nav {
+        display: block;
+        
+    }
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+    .subnav li a {
+        color: #fff;
+        padding: 10px 41px;
+    }
+    #nav>li {
+        display: block;
+    }
+    #nav>li:hover {
+        background-color: #ccc;
+        cursor: pointer;
+    }
+    #nav>li:first-child {
+        display: inline-block;
+    }
+    .about .member-item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .member-item .img-avatar img {
+        width: 60%;
+    }
+    .tour {
+        margin-top: 63px;
+    }
+    #tour .s-col-full {
+        width: 100%;
+    }
 }
