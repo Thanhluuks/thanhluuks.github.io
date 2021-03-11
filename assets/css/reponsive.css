@@ -60,12 +60,20 @@
     }
     #contact .s-col-full,
     #tour .s-col-full {
-        width: 100%;
+        width: 100% !important;
     }
     .col .s-mt-16 {
-        margin-top: 16px;
+        margin-top: 16px !important;
     }
     .col .s-mt-8 {
-        margin-top: 8px;
+        margin-top: 8px !important;
+    }
+    .s-full-width {
+        width: 100% !important;
+    }
+    .s-bth {
+        width: 100% !important;
+        text-align: center;
+        display: block;
     }
 }
