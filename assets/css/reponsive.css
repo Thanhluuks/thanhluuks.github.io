@@ -45,11 +45,11 @@
     #content .section-heading {
         margin-bottom: 30px;
     }
-    .about .member-item {
+    #content .member-item {
         width: 100%;
         margin-bottom: 30px;
     }
-    .member-team .name {
+    #content .name {
         margin-top: 10px;
     }
     .member-item .img-avatar img {
