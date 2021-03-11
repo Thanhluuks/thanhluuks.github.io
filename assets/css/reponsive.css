@@ -1,4 +1,37 @@
 /* Media Queries */
+
+/* Table and mobile*/
+@media (max-width: 1023px) {
+    .btn {
+        padding: 15px;
+    }
+    
+    #footer .social-list {
+        font-size: 48px;
+    }
+    .social-list a {
+        margin: 0 8px;
+    }
+    .comppyright {
+        font-size: 30px;
+    }
+    .comppyright a {
+        padding: 15px 0;
+    }
+    #nav .subnav li {
+        padding: 8px 0;
+    }
+    
+}
+
+/* Table */
+@media (max-width: 1023px) and (min-width: 740px) {
+    .row .contact-infor {
+        line-height: 2;
+    }
+
+}
+
 /* Mobile */
 @media (max-width: 739px) {
     #header {
@@ -57,6 +90,10 @@
     }
     .tour {
         margin-top: 63px;
+    }
+    .row .contact-infor{
+        margin-bottom: 32px;
+        line-height: 2;
     }
     #contact .s-col-full,
     #tour .s-col-full {
